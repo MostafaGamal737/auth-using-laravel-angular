@@ -1,0 +1,5 @@
+1----- composer require jeroennoten/laravel-adminlte
+2----- php artisan adminlte:install
+3-----  composer require laravel/ui "^2.0"
+4-----  php artisan vendor:publish --provider="Tymon\JWTAuth\Providers\LaravelServiceProvider"
+5----  php artisan jwt:secret

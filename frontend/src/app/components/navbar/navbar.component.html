@@ -1,0 +1,14 @@
+<nav class="navbar navbar-light bg-light">
+  <a class="navbar-brand" routerLink="../">Home</a>
+  <div class="">
+
+  <a  class="navbar-brand" routerLink="Login" *ngIf="!LoggedIn; else elseBlock" >login</a>
+
+<ng-template #elseBlock>
+    <a  class="navbar-brand" (click)="logout()"routerLink="Login">Logout</a>
+    <a href="" class="navbar-brand" routerLink="Profile">profile</a>
+  </ng-template>
+
+</div>
+
+</nav>
